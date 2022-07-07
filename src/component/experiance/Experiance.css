@@ -31,41 +31,39 @@
 }
 
 .experiance_details {
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 .experiance_icon {
-    margin-top: 6px;
-    color: var(--color-primary);
+  margin-top: 6px;
+  color: var(--color-primary);
 }
-
 
 /* =================== Media Queries (Medium Devices) =================== */
 @media screen and (max-width: 1024px) {
-    .experiance_container {
-      grid-template-columns:  1fr;
-    }
-
-    .experiance_container > div {
-        width: 80%;
-        padding: 2rem;
-        margin: 0 auto;
-    }
-
-    .experiance_content {
-        padding: 1rem;
-    }
-  
-
+  .experiance_container {
+    grid-template-columns: 1fr;
   }
-  
-  /* =================== Media Queries (Small Devices) =================== */
-  @media screen and (max-width: 600px) {
-    .experiance_container {
-        gap: 1rem;
-    }
-    .experiance_container > div {
-        width: 100%;
-        padding: 2rem 1rem;
-    }
+
+  .experiance_container > div {
+    width: 80%;
+    padding: 2rem;
+    margin: 0 auto;
   }
+
+  .experiance_content {
+    padding: 1rem;
+  }
+}
+
+/* =================== Media Queries (Small Devices) =================== */
+@media screen and (max-width: 600px) {
+  .experiance_container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .experiance_container > div {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+}
